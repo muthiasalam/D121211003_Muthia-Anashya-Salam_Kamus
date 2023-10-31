@@ -165,6 +165,7 @@ function fetchApi(word) {
     resetContent(content);
     resetContent(content2);
     resetContent(content3);
+    wrapper.classList.remove("active");
 
     infoText.style.color = "#ffff";
     infoText.innerHTML = `Searching word of <span>"${word}"</span>`;
