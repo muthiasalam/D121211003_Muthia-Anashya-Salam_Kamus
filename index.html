@@ -15,7 +15,7 @@
         <div class ="landing-page">
             <img src = ./assets/bg.jpg class="background-image">
             <div class = "landing-page-container">
-                <p id="Title">LINGOA</p>
+                <p id="Title">DICTIONARY</p>
                 <p id="desc">Access Millions of Words in One Click</p>
                 <div class="menus">
                     <div class="search">
@@ -23,47 +23,139 @@
                         <i class="fas fa-search"></i>
                         <span class="material-icons">close</span>
                     </div>
-                    <p class="info-text">Type any existing word and press enter to get meaning, example, synonyms, etc.</p>
+                    <p class="info-text">Type the word you want to search and press enter.</p>
                     <div class = "landing-page-menu">
-                        <span>Bookmark</span>
+                        <span id="bookmark-button">Bookmark</span>
                         <span>l</span>
-                        <span>Search</span>
+                        <span id="history-button">History</span>
                     </div>
     
                 </div>
+                
+
             </div>
         </div>
-      <ul>
-        <li class="word">
-          <div class="details">
-            <p>__</p>
-            <span>_ _</span>
+        
+        <div id = "bookmark-list" class="bookmark-container">
+          <p id="bookmark-pagename">Bookmark</p>
+          <hr>
+          <ul class="bookmark-list"></ul>
+        </div>
+        <div id="history-list" class="history-container">
+          <ul class="history-list"></ul>
+        </div>
+        
+      
+        <ul id = "search-result" class="search-result">
+          <li class="word">
+            <div class="details-top">
+              <p>--</p>
+              <i class="fas fa-star" onclick="addToBookmark(this)"></i>
           </div>
-          <i class="fas fa-volume-up"></i>
-        </li>
-        <div class="content">
-          <li class="meaning">
-            <div class="details">
-              <p>Meaning</p>
-              <span>___</span>
-            </div>
+          <hr>
+          <div class="details-bottom">
+              <span>--</span>
+              <i class="fas fa-volume-up"></i>
+          </div>
           </li>
-          <li class="example">
-            <div class="details">
-              <p>Example</p>
-              <span>___</span>
-            </div>
-          </li>
-          <li class="synonyms">
-            <div class="details">
-              <p>Synonyms</p>
-              <div class="list"></div>
-            </div>
-          </li>
-        </div>
-      </ul>
+          <div class="content">
+            <li class="Type">
+              <div class="details">
+                <p>--</p>
+              </div>
+            </li>
+            <li class="meaning">
+              <div class="details">
+                <p>Meaning</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="example">
+              <div class="details">
+                <p>Example</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="synonyms">
+              <div class="details">
+                <p>Synonyms</p>
+                <div class="list"></div>
+              </div>
+            </li>
+            <li class="antonyms">
+              <div class="details">
+                <p>Antonyms</p>
+                <div class="list"></div>
+              </div>
+            </li>
+          </div>
+          <div class="content2">
+            <li class="Type2">
+              <div class="details">
+                <p>--</p>
+              </div>
+            </li>
+            <li class="meaning2">
+              <div class="details">
+                <p>Meaning</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="example2">
+              <div class="details">
+                <p>Example</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="synonyms2">
+              <div class="details">
+                <p>Synonyms</p>
+                <div class="list2"></div>
+              </div>
+            </li>
+            <li class="antonyms2">
+              <div class="details">
+                <p>Antonyms</p>
+                <div class="list2"></div>
+              </div>
+            </li>
+          </div>
+          <div class="content3">
+            <li class="Type3">
+              <div class="details">
+                <p>--</p>
+              </div>
+            </li>
+            <li class="meaning3">
+              <div class="details">
+                <p>Meaning</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="example3">
+              <div class="details">
+                <p>Example</p>
+                <span>___</span>
+              </div>
+            </li>
+            <li class="synonyms3">
+              <div class="details">
+                <p>Synonyms</p>
+                <div class="list3"></div>
+              </div>
+            </li>
+            <li class="antonyms3">
+              <div class="details">
+                <p>Antonyms</p>
+                <div class="list3"></div>
+              </div>
+            </li>
+          </div>
+        </ul>
+    
     </div>
-</div>
+    
+
     <script src="script.js"></script>
 
   </body>
