@@ -185,7 +185,7 @@ ul.search-result .word{
   display: flex;
   flex-direction: column;
   justify-content: start;
-  width: 30%;
+  width: 40%;
 }
 
 ul.search-result .word .details-top, ul.search-result .word .details-bottom {
@@ -429,7 +429,7 @@ ul.search-result .content3 .meaning3 p, ul.search-result .content3 .example3 p, 
 }
 
 i{
-  cursor: pointer;
+  cursor : pointer;
 }
 
 
@@ -511,7 +511,10 @@ ul.search-result .word .details-bottom span{
   font-size: 12px;
 }
 
+ul.search-result .word{
 
+  width: 100%;
+}
 
 
 }
