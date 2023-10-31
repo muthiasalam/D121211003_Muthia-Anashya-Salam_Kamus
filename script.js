@@ -168,7 +168,7 @@ function fetchApi(word) {
     wrapper.classList.remove("active");
 
     infoText.style.color = "#ffff";
-    infoText.innerHTML = `Searching word of <span>"${word}"</span>`;
+    infoText.innerHTML = `Scroll down to see the meaning of <span>"${word}"</span>`;
     let url = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     fetch(url)
         .then((res) => res.json())
@@ -385,13 +385,5 @@ function fillSearchInput(word) {
     fetchApi(word);
     addToHistory(word);
 }
-
-
-
-
-
-
-
-
 
 
