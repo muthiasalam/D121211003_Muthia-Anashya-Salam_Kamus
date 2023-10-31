@@ -217,17 +217,14 @@ const bookmarkButton = document.getElementById("bookmark-button");
 const bookmarkCloseButton = document.getElementById("bookmark-close");
 const bookmarkList = document.getElementById("bookmark-list");
 
-let isBookmarkVisible = false;
-let isHistoryVisible = false;
 
 
 bookmarkButton.addEventListener("click", () => {
-    if (isBookmarkVisible) {
+    if (bookmarkList.style.display === "block") {
         bookmarkList.style.display = "none";
     } else {
         bookmarkList.style.display = "block";
     }
-    isBookmarkVisible = !isBookmarkVisible;
 });
 
 bookmarkCloseButton.addEventListener("click", () => {
@@ -378,7 +375,7 @@ function updateHistoryList(history) {
 
     function closeHistoryList() {
     
-    historyList.style.display = "none";
+    historyList.style.display = "none"; // Misalnya, mengatur elemen menjadi tidak terlihat
     }
 }
 
@@ -390,13 +387,14 @@ updateHistoryList(history);
 
 
 historyButton.addEventListener("click", () => {
-    if (isHistoryVisible) {
+    
+    if (historyList.style.display === "block") {
         historyList.style.display = "none";
     } else {
         historyList.style.display = "block";
-        
+            
     }
-    isHistoryVisible = !isHistoryVisible;
+     
 });
 
 
