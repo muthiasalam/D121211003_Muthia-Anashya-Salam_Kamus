@@ -1,3 +1,5 @@
+
+
 const wrapper = document.querySelector(".wrapper");
 const searchInput = wrapper.querySelector("input");
 const infoText = wrapper.querySelector(".menus .info-text");
@@ -212,6 +214,7 @@ removeIcon.addEventListener("click", () => {
 
 
 const bookmarkButton = document.getElementById("bookmark-button");
+const bookmarkCloseButton = document.getElementById("bookmark-close");
 const bookmarkList = document.getElementById("bookmark-list");
 
 let isBookmarkVisible = false;
@@ -226,6 +229,11 @@ bookmarkButton.addEventListener("click", () => {
     }
     isBookmarkVisible = !isBookmarkVisible;
 });
+
+bookmarkCloseButton.addEventListener("click", () => {
+    bookmarkList.style.display = "none";
+});
+
 
 
 
@@ -291,8 +299,6 @@ updateBookmarkList(getBookmarksFromLocalStorage());
 
 
 
-
-
 const historyButton = document.getElementById("history-button");
 const historyList = document.getElementById("history-list");
 
@@ -331,10 +337,26 @@ function saveHistoryToLocalStorage(history) {
 function updateHistoryList(history) {
     historyList.innerHTML = "";
 
-    const historyPageName = document.createElement("p");
+    const historyTop = document.createElement("div");
+    historyTop.classList.add("history-top");
+
+    const historyPageName = document.createElement("span");
+    
     historyPageName.id = "history-pagename";
     historyPageName.textContent = "History";
     historyList.appendChild(historyPageName);
+
+    const historyCloseButton = document.createElement("span");
+    historyCloseButton.classList.add("material-icons");
+    historyCloseButton.textContent = "close"; 
+
+    
+    historyTop.appendChild(historyPageName);
+    historyTop.appendChild(historyCloseButton);
+    
+    historyList.appendChild(historyTop);
+
+    
 
     const historyHr = document.createElement("hr");
     historyList.appendChild(historyHr);
@@ -351,10 +373,18 @@ function updateHistoryList(history) {
         `;
         historyList.appendChild(listItem);
     });
+
+    historyCloseButton.addEventListener("click", closeHistoryList);
+
+    function closeHistoryList() {
+    
+    historyList.style.display = "none"; // Misalnya, mengatur elemen menjadi tidak terlihat
+    }
 }
 
 
 updateHistoryList(history);
+
 
 
 
@@ -368,6 +398,9 @@ historyButton.addEventListener("click", () => {
     }
     isHistoryVisible = !isHistoryVisible;
 });
+
+
+
 
 
 function removeFromHistory(word) {
@@ -385,5 +418,13 @@ function fillSearchInput(word) {
     fetchApi(word);
     addToHistory(word);
 }
+
+
+
+
+
+
+
+
 
 
