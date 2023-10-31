@@ -377,7 +377,7 @@ ul.search-result .content3 .meaning3 p, ul.search-result .content3 .example3 p, 
   display: none;
 }
 
-.history-container p{
+.history-container .history-top #history-pagename{
   font-size: 30px;
   font-weight: semibold;
   margin-bottom: 0px;
@@ -431,6 +431,27 @@ ul.search-result .content3 .meaning3 p, ul.search-result .content3 .example3 p, 
 i{
   cursor : pointer;
 }
+
+.bookmark-top{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.history-top{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.material-icons{
+  cursor: pointer;
+}
+
+
+
 
 
 
@@ -498,7 +519,7 @@ ul.search-result .word .details-bottom span{
   
 }
 
-.history-container p{
+.history-container .history-top #history-pagename{
   font-size: 20px;
 }
 
