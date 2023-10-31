@@ -428,6 +428,10 @@ ul.search-result .content3 .meaning3 p, ul.search-result .content3 .example3 p, 
   margin-right: 15px;
 }
 
+i{
+  cursor: pointer;
+}
+
 
 
 @media only screen and (max-width: 768px) {
