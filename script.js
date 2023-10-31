@@ -375,7 +375,7 @@ function updateHistoryList(history) {
 
     function closeHistoryList() {
     
-    historyList.style.display = "none"; // Misalnya, mengatur elemen menjadi tidak terlihat
+    historyList.style.display = "none"; 
     }
 }
 
