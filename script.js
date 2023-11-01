@@ -216,6 +216,8 @@ removeIcon.addEventListener("click", () => {
 const bookmarkButton = document.getElementById("bookmark-button");
 const bookmarkCloseButton = document.getElementById("bookmark-close");
 const bookmarkList = document.getElementById("bookmark-list");
+const bookmarks = getBookmarksFromLocalStorage();
+const clearBookmarkButton = document.getElementById("clear-bookmark-button");
 
 
 
@@ -233,10 +235,19 @@ bookmarkCloseButton.addEventListener("click", () => {
 
 
 
+clearBookmarkButton.addEventListener("click", () => {
+    clearAllBookmarks();
+});
+
+function clearAllBookmarks() {
+    bookmarks.length = 0;
+    saveBookmarksToLocalStorage(bookmarks);
+    updateBookmarkList(bookmarks);
+}
+
 
 function addToBookmark(iconElement) {
     const word = document.querySelector(".word p").innerText;
-    const bookmarks = getBookmarksFromLocalStorage();
 
     if (!bookmarks.includes(word)) {
         bookmarks.push(word);
@@ -251,8 +262,10 @@ function addToBookmark(iconElement) {
 
 
 
+
+
+
 function removeFromBookmark(word) {
-    const bookmarks = getBookmarksFromLocalStorage();
     const index = bookmarks.indexOf(word);
 
     if (index !== -1) {
@@ -288,6 +301,7 @@ function updateBookmarkList(bookmarks) {
             </div>
         `;
         bookmarkList.appendChild(listItem);
+
     });
 }
 
@@ -298,6 +312,7 @@ updateBookmarkList(getBookmarksFromLocalStorage());
 
 const historyButton = document.getElementById("history-button");
 const historyList = document.getElementById("history-list");
+const clearHistoryButton = document.getElementById("clear-history-button");
 
 const maxHistorySize = 10;
 let history = getHistoryFromLocalStorage();
@@ -347,6 +362,13 @@ function updateHistoryList(history) {
     historyCloseButton.classList.add("material-icons");
     historyCloseButton.textContent = "close"; 
 
+    const clearHistoryButton = document.createElement("button");
+    clearHistoryButton.textContent = "Clear All";
+    clearHistoryButton.id = "clear-history-button";
+    clearHistoryButton.addEventListener("click", () => {
+        clearHistory();
+    });
+
     
     historyTop.appendChild(historyPageName);
     historyTop.appendChild(historyCloseButton);
@@ -369,13 +391,14 @@ function updateHistoryList(history) {
             
         `;
         historyList.appendChild(listItem);
+        historyList.appendChild(clearHistoryButton);
     });
 
     historyCloseButton.addEventListener("click", closeHistoryList);
 
     function closeHistoryList() {
     
-    historyList.style.display = "none"; 
+    historyList.style.display = "none"; // Misalnya, mengatur elemen menjadi tidak terlihat
     }
 }
 
@@ -396,6 +419,7 @@ historyButton.addEventListener("click", () => {
     }
      
 });
+
 
 
 
