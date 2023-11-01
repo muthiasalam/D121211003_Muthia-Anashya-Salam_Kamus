@@ -221,6 +221,7 @@ const clearBookmarkButton = document.getElementById("clear-bookmark-button");
 
 
 
+
 bookmarkButton.addEventListener("click", () => {
     if (bookmarkList.style.display === "block") {
         bookmarkList.style.display = "none";
@@ -243,7 +244,17 @@ function clearAllBookmarks() {
     bookmarks.length = 0;
     saveBookmarksToLocalStorage(bookmarks);
     updateBookmarkList(bookmarks);
+    updateClearButtonVisibility(); 
 }
+
+function updateClearButtonVisibility() {
+    if (bookmarks.length === 0) {
+        clearBookmarkButton.style.display = "none";
+    } else {
+        clearBookmarkButton.style.display = "block";
+    }
+}
+
 
 
 function addToBookmark(iconElement) {
@@ -257,6 +268,7 @@ function addToBookmark(iconElement) {
     } else{
         alert("item is already in bookmarks")
     }
+    updateClearButtonVisibility();
 }
 
 
@@ -273,6 +285,7 @@ function removeFromBookmark(word) {
         saveBookmarksToLocalStorage(bookmarks);
         updateBookmarkList(bookmarks);
     }
+    updateClearButtonVisibility();
 }
 
 
@@ -307,6 +320,7 @@ function updateBookmarkList(bookmarks) {
 
 
 updateBookmarkList(getBookmarksFromLocalStorage());
+updateClearButtonVisibility();
 
 
 
