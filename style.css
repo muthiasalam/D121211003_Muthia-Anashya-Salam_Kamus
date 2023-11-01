@@ -450,6 +450,22 @@ i{
   cursor: pointer;
 }
 
+.history-container button{
+  padding: 10px 20px;
+  background-color: yellow;
+  border: none;
+  color: black;
+  font-weight: semibold;
+}
+
+.bookmark-container button{
+
+  padding: 10px 20px;
+  background-color: yellow;
+  border: none;
+  color: black;
+  font-weight: semibold;
+}
 
 
 
@@ -540,6 +556,8 @@ ul.search-result .word{
 .landing-page .landing-page-container .menus{
   width: 60%;
 }
+
+
 
 }
 
