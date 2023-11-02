@@ -22,4 +22,9 @@ Aplikasi kamus bahasa Inggris ini alat yang dapat membantu pengguna dalam memaha
 
 Perlu diingat bahwa beberapa fitur mungkin tidak selalu tersedia untuk setiap kata karena keterbatasan sumber data dari API yang digunakan. 
 
+## Pengembangan
+1. HTML        : Digunakan untuk membuat struktur dasar halaman web
+2. CSS         : Digunakan untuk mengatur gaya dan tata letak dari setiap elemen di halaman web
+3. Javascript: : Digunakan untuk menarik data dari API, mengatur perubahan konten secara dinamis, menyimpan, menghapus, menampilkan, dan memperbarui markah dan riwayat pencarian.
+4. [Free Dictionary API](https://dictionaryapi.dev/).         : Digunakan sebagai sumber data utama.
 
