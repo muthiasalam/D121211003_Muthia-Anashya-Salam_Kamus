@@ -28,3 +28,12 @@ Perlu diingat bahwa beberapa fitur mungkin tidak selalu tersedia untuk setiap ka
 - Javascript: : Digunakan untuk menarik data dari API, mengatur perubahan konten secara dinamis, menyimpan, menghapus, menampilkan, dan memperbarui markah dan riwayat pencarian.
 - [Free Dictionary API](https://dictionaryapi.dev/)       : Digunakan sebagai sumber data utama.
 
+## Penggunaan
+- **Pencarian**
+  - Ketikkan kata dalam kolom pencarian dan tekan enter.
+  - Jika kata yang dimasukkan memang tersedia dalam database API, maka akan muncul instruksi "Scroll down to see the meaning of (word)". Anda dapat menggulir halaman untuk melihat hasil pencarian.
+  - Jika kata yang dimasukkan tidak tersedia, maka akan muncul notifikasi "Can't find the meaning of (word). Please, try to search for another word. Anda perlu memastikan bahwa kata yang Anda masukkan telah meiliki ejaan yang benar atau tersedia dalam bahasa Inggris
+
+- **Markah**
+  - 
+  
