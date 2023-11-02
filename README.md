@@ -33,7 +33,7 @@ Link website: [Dictionary By Muthia Anashya Salam](https://muthiasalam.github.io
 - **Pencarian**
   - Ketikkan kata dalam kolom pencarian dan tekan enter.
   - Jika kata yang dimasukkan memang tersedia, maka akan muncul instruksi "Scroll down to see the meaning of (word)". Anda dapat menggulir halaman untuk melihat hasil pencarian.
-  - Jika kata yang dimasukkan tidak tersedia, maka akan muncul notifikasi "Can't find the meaning of (word). Please, try to search for another word. Anda perlu memastikan bahwa kata yang Anda masukkan telah meiliki ejaan yang benar atau tersedia dalam bahasa Inggris
+  - Jika kata yang dimasukkan tidak tersedia, maka akan muncul notifikasi "Can't find the meaning of (word). Please, try to search for another word". Anda perlu memastikan bahwa kata yang Anda masukkan telah meiliki ejaan yang benar atau tersedia dalam bahasa Inggris
   - Untuk menghapus tampilan hasil pencarian saat ini, Anda dapat menekan ikon "X" di kolom pencarian.
 
 - **Markah**
