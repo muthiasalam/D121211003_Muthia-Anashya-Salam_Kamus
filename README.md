@@ -43,7 +43,6 @@ Perlu diingat bahwa beberapa fitur mungkin tidak selalu tersedia untuk setiap ka
   - Untuk menutup halaman markah, Anda dapat melakukannya dengan dua cara, yaitu (1) menekan ikon "X" di samping judul halaman atau menekan kembali menu "Bookmark" di bawah kolom pencarian.
 
 - **Riwayat**
-  - **Riwayat**
   - Klik ikon bintang di samping kata untuk memasukkan kata ke daftar riwayat.
   - Untuk melihat daftar riwayat, Anda dapat menekan menu "History" di bawah kolom pencarian.
   - Untuk menghapus seluruh isi riwayat, Anda dapat menekan tombol "Clear All".
