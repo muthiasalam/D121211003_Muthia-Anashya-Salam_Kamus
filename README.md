@@ -29,6 +29,7 @@ Perlu diingat bahwa beberapa fitur mungkin tidak selalu tersedia untuk setiap ka
 - [Free Dictionary API](https://dictionaryapi.dev/)       : Digunakan sebagai sumber data utama.
 
 ## Penggunaan
+Link website: [Dictionary By Muthia Anashya Salam](https://muthiasalam.github.io/D121211003_Muthia-Anashya-Salam_Kamus/)
 - **Pencarian**
   - Ketikkan kata dalam kolom pencarian dan tekan enter.
   - Jika kata yang dimasukkan memang tersedia, maka akan muncul instruksi "Scroll down to see the meaning of (word)". Anda dapat menggulir halaman untuk melihat hasil pencarian.
