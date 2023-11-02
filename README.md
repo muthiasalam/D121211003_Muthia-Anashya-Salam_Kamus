@@ -33,6 +33,7 @@ Perlu diingat bahwa beberapa fitur mungkin tidak selalu tersedia untuk setiap ka
   - Ketikkan kata dalam kolom pencarian dan tekan enter.
   - Jika kata yang dimasukkan memang tersedia, maka akan muncul instruksi "Scroll down to see the meaning of (word)". Anda dapat menggulir halaman untuk melihat hasil pencarian.
   - Jika kata yang dimasukkan tidak tersedia, maka akan muncul notifikasi "Can't find the meaning of (word). Please, try to search for another word. Anda perlu memastikan bahwa kata yang Anda masukkan telah meiliki ejaan yang benar atau tersedia dalam bahasa Inggris
+  - Untuk menghapus tampilan hasil pencarian saat ini, Anda dapat menekan ikon "X" di kolom pencarian.
 
 - **Markah**
   - Klik ikon bintang di samping kata untuk memasukkan kata ke daftar markah.
