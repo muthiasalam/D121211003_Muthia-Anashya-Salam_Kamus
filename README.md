@@ -31,9 +31,27 @@ Perlu diingat bahwa beberapa fitur mungkin tidak selalu tersedia untuk setiap ka
 ## Penggunaan
 - **Pencarian**
   - Ketikkan kata dalam kolom pencarian dan tekan enter.
-  - Jika kata yang dimasukkan memang tersedia dalam database API, maka akan muncul instruksi "Scroll down to see the meaning of (word)". Anda dapat menggulir halaman untuk melihat hasil pencarian.
+  - Jika kata yang dimasukkan memang tersedia, maka akan muncul instruksi "Scroll down to see the meaning of (word)". Anda dapat menggulir halaman untuk melihat hasil pencarian.
   - Jika kata yang dimasukkan tidak tersedia, maka akan muncul notifikasi "Can't find the meaning of (word). Please, try to search for another word. Anda perlu memastikan bahwa kata yang Anda masukkan telah meiliki ejaan yang benar atau tersedia dalam bahasa Inggris
 
 - **Markah**
-  - 
+  - Klik ikon bintang di samping kata untuk memasukkan kata ke daftar markah.
+  - Untuk melihat daftar markah, Anda dapat menekan menu "Bookmark" di bawah kolom pencarian.
+  - Untuk menghapus seluruh isi markah, Anda dapat menekan tombol "Clear All".
+  - Untuk menghapus satu kata dalam markah, Anda dapat menekan ikon "sampah" di samping setiap kata.
+  - Untuk mencari ulang makna kata yang ada di markah, anda dapat menekan ikon "panah" di samping setiap kata.
+  - Untuk menutup halaman markah, Anda dapat melakukannya dengan dua cara, yaitu (1) menekan ikon "X" di samping judul halaman atau menekan kembali menu "Bookmark" di bawah kolom pencarian.
+
+- **Riwayat**
+  - **Riwayat**
+  - Klik ikon bintang di samping kata untuk memasukkan kata ke daftar riwayat.
+  - Untuk melihat daftar riwayat, Anda dapat menekan menu "History" di bawah kolom pencarian.
+  - Untuk menghapus seluruh isi riwayat, Anda dapat menekan tombol "Clear All".
+  - Untuk menghapus satu kata dalam riwayat, Anda dapat menekan icon "sampah" di samping setiap kata.
+  - Untuk mencari ulang makna kata yang ada di riwayat, anda dapat menekan icon "panah" di samping setiap kata.
+  - Untuk menutup halaman riwayat, Anda dapat melakukannya dengan dua cara, yaitu (1) menekan icon "X" di samping judul halaman atau menekan kembali menu "History" di bawah kolom pencarian.
+ 
+- **Audio**
+  - Tekan ikon "audio" untuk mendengarkan pelafalan
+  
   
